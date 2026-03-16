@@ -20,7 +20,7 @@ jobs:
       with:
         pixi-version: v0.23.0
         environments: doc
-        frozen: true
+        frozen: false
 
     - name: Build documentation
       run: pixi run -e doc build-doc

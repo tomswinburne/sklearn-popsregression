@@ -1,7 +1,8 @@
 """This file shows how to write test based on the scikit-learn common tests."""
 
-# Authors: scikit-learn-contrib developers
-# License: BSD 3 clause
+# Authors: Thomas D Swinburne <tswin@umich.edu>
+#          Danny Perez <danny_perez@lanl.gov>
+# SPDX-License-Identifier: BSD-3-Clause
 
 from sklearn.utils.estimator_checks import parametrize_with_checks
 

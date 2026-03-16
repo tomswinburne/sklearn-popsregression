@@ -4,37 +4,16 @@
 API Reference
 #############
 
-This is an example on how to document the API of your own project.
-
 .. currentmodule:: popsregression
 
-Estimator
+Regressor
 =========
 
 .. autosummary::
    :toctree: generated/
    :template: class.rst
 
-   TemplateEstimator
-
-Transformer
-===========
-
-.. autosummary::
-   :toctree: generated/
-   :template: class.rst
-
-   TemplateTransformer
-
-Predictor
-=========
-
-.. autosummary::
-   :toctree: generated/
-   :template: class.rst
-
-    TemplateClassifier
-
+   POPSRegression
 
 Utilities
 =========

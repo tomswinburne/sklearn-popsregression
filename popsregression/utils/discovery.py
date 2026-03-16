@@ -87,7 +87,11 @@ def all_estimators(type_filter=None):
     estimators = [
         c
         for c in all_classes
-        if (issubclass(c[1], BaseEstimator) and c[0] != "BaseEstimator")
+        if (
+            issubclass(c[1], BaseEstimator)
+            and c[0] != "BaseEstimator"
+            and c[1].__module__.startswith("popsregression.")
+        )
     ]
     # get rid of abstract base classes
     estimators = [c for c in estimators if not is_abstract(c[1])]

@@ -21,7 +21,7 @@ jobs:
         with:
           pixi-version: v0.23.0
           environments: ${{ matrix.environment }}
-          frozen: true
+          frozen: false
 
       - name: Run tests
         run: pixi run -e ${{ matrix.environment }} test
@@ -30,4 +30,4 @@ jobs:
         uses: codecov/codecov-action@v4.6.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: scikit-learn-contrib/popsregression
+          slug: tomswinburne/sklearn-popsregression

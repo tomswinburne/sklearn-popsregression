@@ -1,23 +1,26 @@
-.. popsregression documentation master file, created by
-   sphinx-quickstart on Mon Jan 18 14:44:12 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. popsregression documentation master file
 
 :notoc:
 
-#############################################
-Project template for `scikit-learn` extension
-#############################################
+################
+POPS Regression
+################
 
 **Date**: |today| **Version**: |version|
 
 **Useful links**:
-`Source Repository <https://github.com/scikit-learn-contrib/popsregression>`__ |
-`Issues & Ideas <https://github.com/scikit-learn-contrib/popsregressionk/issues>`__ |
+`Source Repository <https://github.com/tomswinburne/sklearn-popsregression>`__ |
+`Issues & Ideas <https://github.com/tomswinburne/sklearn-popsregression/issues>`__
 
-This is the documentation for the `popsregression` to help at extending
-`scikit-learn`. It provides some information on how to build your own custom
-`scikit-learn` compatible estimators as well as a template to package them.
+Bayesian regression for low-noise data with misspecification uncertainty
+estimation using the POPS (Pointwise Optimal Parameter Sets) algorithm.
+
+``popsregression`` provides :class:`~popsregression.POPSRegression`, a
+scikit-learn compatible estimator that extends
+:class:`~sklearn.linear_model.BayesianRidge` to estimate weight uncertainties
+accounting for model misspecification. This is particularly useful for
+surrogate models fit to near-deterministic data, where standard Bayesian
+regression significantly underestimates predictive uncertainty.
 
 
 .. grid:: 1 2 2 2
@@ -30,7 +33,7 @@ This is the documentation for the `popsregression` to help at extending
         :class-card: intro-card
         :shadow: md
 
-        Information regarding this template and how to modify it for your own project.
+        Installation and quick introduction to POPS Regression.
 
         +++
 
@@ -47,8 +50,7 @@ This is the documentation for the `popsregression` to help at extending
         :class-card: intro-card
         :shadow: md
 
-        An example of narrative documentation. Here, we will explain how to create your
-        own `scikit-learn` estimator.
+        Background on the POPS algorithm and how to use it effectively.
 
         +++
 
@@ -65,8 +67,7 @@ This is the documentation for the `popsregression` to help at extending
         :class-card: intro-card
         :shadow: md
 
-        An example of API documentation. This is an example how to use `sphinx` to
-        automatically generate reference API page.
+        Detailed API documentation for POPSRegression.
 
         +++
 
@@ -83,8 +84,7 @@ This is the documentation for the `popsregression` to help at extending
         :class-card: intro-card
         :shadow: md
 
-        A set of examples. It complements the User Guide and it is the right place to
-        show how to use your compatible estimator.
+        Gallery of examples demonstrating POPS Regression usage.
 
         +++
 
