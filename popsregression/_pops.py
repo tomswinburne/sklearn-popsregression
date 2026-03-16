@@ -274,13 +274,14 @@ class POPSRegression(BayesianRidge):
             else:
                 sw = None
 
-            X_pp, y_pp, _, _, _ = _preprocess_data(
+            preprocess_result = _preprocess_data(
                 X_pp,
                 y_pp,
                 fit_intercept=False,
                 copy=True,
                 sample_weight=sw,
             )
+            X_pp, y_pp = preprocess_result[0], preprocess_result[1]
 
             n_samples = X_pp.shape[0]
 
