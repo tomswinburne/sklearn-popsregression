@@ -45,6 +45,8 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 python = ">=3.9"
 scikit-learn = ">=1.6.1"
 scipy = ">=1.6.0"
+setuptools = ">=64"
+setuptools-scm = ">=8"
 
 [tool.pixi.pypi-dependencies]
 popsregression = { path=".", editable=true }
